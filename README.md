@@ -2,6 +2,8 @@
 
 Yazi previewer which uses f3d to render 3d object files like: step, stl, obj, 3mf, ply and many more.
 
+![screenshot](img/screenshot.png)
+
 ## Requirements
 
 - f3d
