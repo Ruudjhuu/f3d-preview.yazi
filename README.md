@@ -11,7 +11,7 @@ Yazi previewer which uses f3d to render 3d object files like: step, stl, obj, 3m
 ## Installation
 
 ```
-ya pkg install "ruudjhuu/f3d-preview"
+ya pkg add "ruudjhuu/f3d-preview"
 ```
 
 ## Configuration
