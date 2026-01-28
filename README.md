@@ -16,29 +16,29 @@ ya pkg add "ruudjhuu/f3d-preview"
 
 ## Configuration
 
-Add the follwing to your `yazi.toml`
+Add the following to your `yazi.toml`
 
 ```
-
+[plugin]
 prepend_preloaders = [
   # 3d objects
-  { name = "*.3mf", run = "f3d-preview" },
-  { name = "*.obj", run = "f3d-preview" },
-  { name = "*.pts", run = "f3d-preview" },
-  { name = "*.ply", run = "f3d-preview" },
-  { name = "*.stl", run = "f3d-preview" },
-  { name = "*.step", run = "f3d-preview" },
-  { name = "*.stp", run = "f3d-preview" },
+  { url = "*.{3mf,obj,pts,ply,stl,step,stp}", run="f3d-preview"},
 ]
 
 prepend_previewers = [
   # 3d objects
-  { name = "*.3mf", run = "f3d-preview" },
-  { name = "*.obj", run = "f3d-preview" },
-  { name = "*.pts", run = "f3d-preview" },
-  { name = "*.ply", run = "f3d-preview" },
-  { name = "*.stl", run = "f3d-preview" },
-  { name = "*.step", run = "f3d-preview" },
-  { name = "*.stp", run = "f3d-preview" },
+  { url = "*.{3mf,obj,pts,ply,stl,step,stp}", run="f3d-preview"},
 ]
+```
+
+Or alternative toml syntax:
+
+```
+[[plugin.prepend_previewers]]
+url = "*.{3mf,obj,pts,ply,stl,step,stp}"
+run = "f3d-preview"
+
+[[plugin.prepend_preloaders]]
+url = "*.{3mf,obj,pts,ply,stl,step,stp}"
+run = "f3d-preview"
 ```
